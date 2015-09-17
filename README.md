@@ -2,6 +2,8 @@
 
 A library to help you search, validate, and convert between US state names and postal codes.
 
+## Installation
+
 ```
 npm install state-postal-codes --save
 ```
