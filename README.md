@@ -6,8 +6,6 @@ A library to help you search, validate, and convert between US state names and p
 npm install state-postal-codes --save
 ```
 
-TODO
-
 ## Usage
 
 ```
