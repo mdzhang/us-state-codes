@@ -1,5 +1,4 @@
 var expect = require('chai').expect;
-var _ = require('lodash');
 var states = require('../index');
 
 describe('state-postal-codes', function() {

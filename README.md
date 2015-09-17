@@ -1,6 +1,6 @@
 # us-state-codes
 
-A library to help you search, validate, and convert between US state names and postal codes.
+A library to help you search, validate, and convert between US state names and state codes.
 
 ## Installation
 
