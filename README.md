@@ -1,17 +1,17 @@
-# state-postal-codes
+# us-state-codes
 
 A library to help you search, validate, and convert between US state names and postal codes.
 
 ## Installation
 
 ```
-npm install state-postal-codes --save
+npm install us-state-codes --save
 ```
 
 ## Usage
 
 ```
-var states = require('state-postal-codes');
+var states = require('us-state-codes');
 
 var stateName = states.getStateNameByStateCode('hi');
 assert(stateName === 'Hawaii');

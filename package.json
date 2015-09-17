@@ -1,5 +1,5 @@
 {
-  "name": "state-postal-codes",
+  "name": "us-state-codes",
   "version": "1.0.0",
   "description": "US state names and postal codes",
   "main": "index.js",
@@ -8,9 +8,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mdzhang/state-postal-codes.git"
+    "url": "git+https://github.com/mdzhang/us-state-codes.git"
   },
   "keywords": [
+    "us",
     "state",
     "postal",
     "code"
@@ -18,9 +19,9 @@
   "author": "Michelle D. Zhang <zhang.michelle.d@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mdzhang/state-postal-codes/issues"
+    "url": "https://github.com/mdzhang/us-state-codes/issues"
   },
-  "homepage": "https://github.com/mdzhang/state-postal-codes#readme",
+  "homepage": "https://github.com/mdzhang/us-state-codes#readme",
   "dependencies": {
     "lodash": "^3.10.1"
   },
