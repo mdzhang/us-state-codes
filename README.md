@@ -8,7 +8,15 @@ TODO
 
 ## Usage
 
-TODO
+```
+var states = require('state-postal-codes');
+
+var stateName = states.getStateNameByStateCode('hi');
+assert(stateName === 'Hawaii');
+
+var stateCode = states.getStateCodeByStateName('HawAiI ');
+assert(stateCode === 'HI');
+```
 
 ## License
 
