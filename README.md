@@ -1,5 +1,7 @@
 # us-state-codes
 
+[![Circle CI](https://circleci.com/gh/mdzhang/us-state-codes.svg?style=svg)](https://circleci.com/gh/mdzhang/us-state-codes)
+
 A library to help you search, validate, and convert between US state names and state codes.
 
 ## Installation
