@@ -4,8 +4,10 @@ var stateNamesByCode = require('./states');
 var stateCodesByName = _.invert(stateNamesByCode);
 
 // normalizes case and removes invalid characters
+// returns null if can't find sanitized code in the state map
 var sanitizeStateCode = function(code) {
-  return _.isString(code) ? code.trim().toUpperCase().replace(/[^A-Z]/g, '') : null;
+  code = _.isString(code) ? code.trim().toUpperCase().replace(/[^A-Z]/g, '') : null;
+  return stateNamesByCode[code] ? code : null;
 };
 
 // returns a valid state name else null
@@ -14,6 +16,7 @@ var getStateNameByStateCode = function(code) {
 };
 
 // normalizes case and removes invalid characters
+// returns null if can't find sanitized name in the state map
 var sanitizeStateName = function(name) {
   if (!_.isString(name)) {
     return null;
@@ -32,7 +35,8 @@ var sanitizeStateName = function(name) {
     tokens[1] = tokens[1].toLowerCase();
   }
 
-  return tokens.join(' ');
+  name = tokens.join(' ');
+  return stateCodesByName[name] ? name : null;
 };
 
 // returns a valid state code else null

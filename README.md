@@ -13,11 +13,14 @@ npm install us-state-codes --save
 ```
 var states = require('us-state-codes');
 
-var stateName = states.getStateNameByStateCode('hi');
-assert(stateName === 'Hawaii');
+var stateCode = 'HI.';
+var stateName = '(HawAiI) ';
 
-var stateCode = states.getStateCodeByStateName('HawAiI ');
-assert(stateCode === 'HI');
+assert(states.sanitizeStateCode(stateCode) === 'HI');
+assert(states.sanitizeStateName(stateName) === 'Hawaii');
+
+assert(states.getStateNameByStateCode(stateCode) === 'Hawaii');
+assert(states.getStateCodeByStateName(stateName) === 'HI');
 ```
 
 ## License
