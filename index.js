@@ -12,7 +12,7 @@ var sanitizeStateCode = function(code) {
 
 // returns a valid state name else null
 var getStateNameByStateCode = function(code) {
-  return stateNamesByCode[sanitizeStateCode(code)];
+  return stateNamesByCode[sanitizeStateCode(code)] || null;
 };
 
 // normalizes case and removes invalid characters
@@ -41,7 +41,7 @@ var sanitizeStateName = function(name) {
 
 // returns a valid state code else null
 var getStateCodeByStateName = function(name) {
-  return stateCodesByName[sanitizeStateName(name)];
+  return stateCodesByName[sanitizeStateName(name)] || null;
 };
 
 module.exports = {
