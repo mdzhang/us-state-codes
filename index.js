@@ -1,6 +1,6 @@
 var _ = require('lodash');
 
-var stateNamesByCode = require('./states');
+var stateNamesByCode = require('./states.json');
 var stateCodesByName = _.invert(stateNamesByCode);
 
 // normalizes case and removes invalid characters
