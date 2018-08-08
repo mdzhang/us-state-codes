@@ -24,7 +24,9 @@
   },
   "homepage": "https://github.com/mdzhang/us-state-codes#readme",
   "dependencies": {
-    "lodash": "^3.10.1"
+    "lodash.invert": "^4.3.0",
+    "lodash.isstring": "^4.0.1",
+    "lodash.map": "^4.6.0"
   },
   "devDependencies": {
     "chai": "^3.2.0",
