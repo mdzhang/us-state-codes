@@ -1,6 +1,7 @@
 # us-state-codes
 
-[![Circle CI](https://circleci.com/gh/mdzhang/us-state-codes.svg?style=svg)](https://circleci.com/gh/mdzhang/us-state-codes)
+-[![build](https://circleci.com/gh/mdzhang/us-state-codes.svg?style=shield)](https://circleci.com/gh/mdzhang/us-state-codes)
+[![version](http://img.shields.io/npm/v/us-state-codes.svg)](https://npmjs.org/package/us-state-codes)
 
 A library to help you search, validate, and convert between US state names and state codes.
 
