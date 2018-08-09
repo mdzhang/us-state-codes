@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.2 (2018-08-08)
+
+- Use modular lodash imports to reduce dependency tree size
+
 ## 1.1.1 (2018-07-24)
 
 - Changed require for states to include json extension.
