@@ -1,12 +1,14 @@
-var _ = require('lodash');
+var map = require('lodash.map');
+var invert = require('lodash.invert');
+var isString = require('lodash.isstring');
 
 var stateNamesByCode = require('./states.json');
-var stateCodesByName = _.invert(stateNamesByCode);
+var stateCodesByName = invert(stateNamesByCode);
 
 // normalizes case and removes invalid characters
 // returns null if can't find sanitized code in the state map
 var sanitizeStateCode = function(code) {
-  code = _.isString(code) ? code.trim().toUpperCase().replace(/[^A-Z]/g, '') : null;
+  code = isString(code) ? code.trim().toUpperCase().replace(/[^A-Z]/g, '') : null;
   return stateNamesByCode[code] ? code : null;
 };
 
@@ -18,7 +20,7 @@ var getStateNameByStateCode = function(code) {
 // normalizes case and removes invalid characters
 // returns null if can't find sanitized name in the state map
 var sanitizeStateName = function(name) {
-  if (!_.isString(name)) {
+  if (!isString(name)) {
     return null;
   }
 
@@ -26,7 +28,7 @@ var sanitizeStateName = function(name) {
   name = name.trim().toLowerCase().replace(/[^a-z\s]/g, '').replace(/\s+/g, ' ');
 
   var tokens = name.split(/\s+/);
-  tokens = _.map(tokens, function(token) {
+  tokens = map(tokens, function(token) {
     return token.charAt(0).toUpperCase() + token.slice(1);
   });
 
