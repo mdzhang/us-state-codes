@@ -26,3 +26,7 @@ assert(states.sanitizeStateName(stateName) === 'Hawaii');
 assert(states.getStateNameByStateCode(stateCode) === 'Hawaii');
 assert(states.getStateCodeByStateName(stateName) === 'HI');
 ```
+
+## License
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmdzhang%2Fus-state-codes.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmdzhang%2Fus-state-codes?ref=badge_large)
