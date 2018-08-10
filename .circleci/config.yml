@@ -4,6 +4,7 @@ general:
     only:
       - master
       - /feature.*
+      - /greenkeeper.*
 jobs:
   build:
     docker:
