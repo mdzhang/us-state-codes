@@ -5,6 +5,7 @@ general:
       - master
       - /feature.*
       - greenkeeper.*
+      - renovate.*
 jobs:
   build:
     docker:
