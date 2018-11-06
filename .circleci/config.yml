@@ -3,9 +3,9 @@ general:
   branches:
     only:
       - master
-      - /feature.*
-      - greenkeeper.*
-      - renovate.*
+      - /feature.*/
+      - /greenkeeper.*/
+      - /renovate.*/
 jobs:
   build:
     docker:
