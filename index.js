@@ -8,7 +8,7 @@ function invert(obj) {
 }
 
 function isString(val) {
-  return typeof val === 'string'
+  return typeof val === 'string';
 }
 
 var stateNamesByCode = require('./states.json');
