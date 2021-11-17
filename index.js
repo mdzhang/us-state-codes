@@ -1,6 +1,10 @@
-var map = require('lodash.map');
-var invert = require('lodash.invert');
-var isString = require('lodash.isstring');
+function invert(obj) {
+  return Object.entries(obj).reduce((acc, [code, name]) => ({...acc, [name]: code}))
+}
+
+function isString(val) {
+  return typeof val === 'string'
+}
 
 var stateNamesByCode = require('./states.json');
 var stateCodesByName = invert(stateNamesByCode);
@@ -28,7 +32,7 @@ var sanitizeStateName = function(name) {
   name = name.trim().toLowerCase().replace(/[^a-z\s]/g, '').replace(/\s+/g, ' ');
 
   var tokens = name.split(/\s+/);
-  tokens = map(tokens, function(token) {
+  tokens = tokens.map(function(token) {
     return token.charAt(0).toUpperCase() + token.slice(1);
   });
 
