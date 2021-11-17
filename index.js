@@ -1,5 +1,7 @@
 function invert(obj) {
-  return Object.entries(obj).reduce((acc, [code, name]) => ({...acc, [name]: code}))
+  return Object.entries(obj).reduce(function (acc, entry) {
+    return {...acc, [entry.name]: entry.code};
+  }, {});
 }
 
 function isString(val) {
