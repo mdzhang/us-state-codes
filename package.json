@@ -23,11 +23,7 @@
     "url": "https://github.com/mdzhang/us-state-codes/issues"
   },
   "homepage": "https://github.com/mdzhang/us-state-codes#readme",
-  "dependencies": {
-    "lodash.invert": "^4.3.0",
-    "lodash.isstring": "^4.0.1",
-    "lodash.map": "^4.6.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^6.0.0"
