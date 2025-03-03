@@ -9,7 +9,7 @@ general:
 jobs:
   build:
     docker:
-      - image: circleci/node:10.16
+      - image: circleci/node:10.16 || 16.13
     working_directory: ~/repo
 
     steps:
